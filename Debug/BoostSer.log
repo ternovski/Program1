@@ -1,0 +1,80 @@
+﻿Построение начато 16.03.2015 1:01:18.
+     1>Проект "C:\Documents and Settings\Administrator\My Documents\Visual Studio 2010\Projects\BoostSer\BoostSer\BoostSer.vcxproj" в узле 2 (целевые объекты rebuild).
+     1>_PrepareForClean:
+         Файл "Debug\BoostSer.lastbuildstate" удаляется.
+       InitializeBuildStatus:
+         Создание "Debug\BoostSer.unsuccessfulbuild", так как было задано "AlwaysCreate".
+       ClCompile:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I"C:\boost\include\boost-1_57" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt source1.cpp
+         source1.cpp
+     1>c:\documents and settings\administrator\my documents\visual studio 2010\projects\boostser\boostser\source1.cpp(110): warning C4244: аргумент: преобразование "uintmax_t" в "int", возможна потеря данных
+     1>c:\boost\include\boost-1_57\boost\mpl\print.hpp(52): warning C4308: отрицательная целая константа преобразована в тип без знака
+                 c:\boost\include\boost-1_57\boost\serialization\static_warning.hpp(93): см. ссылку на создание экземпляров класса шаблон при компиляции "boost::mpl::print<T>"
+                 with
+                 [
+                     T=boost::serialization::BOOST_SERIALIZATION_STATIC_WARNING_LINE<98>
+                 ]
+                 c:\boost\include\boost-1_57\boost\archive\detail\check.hpp(98): см. ссылку на создание экземпляров класса шаблон при компиляции "boost::serialization::static_warning_test<B,L>"
+                 with
+                 [
+                     B=false,
+                     L=98
+                 ]
+                 c:\boost\include\boost-1_57\boost\archive\detail\oserializer.hpp(313): см. ссылку на создание экземпляров функции шаблон при компиляции "void boost::archive::detail::check_object_tracking<T>(void)"
+                 with
+                 [
+                     T=C
+                 ]
+                 c:\boost\include\boost-1_57\boost\archive\detail\oserializer.hpp(525): см. ссылку на создание экземпляров функции шаблон при компиляции "void boost::archive::detail::save_non_pointer_type<Archive>::invoke<T>(Archive &,T &)"
+                 with
+                 [
+                     Archive=boost::archive::text_oarchive,
+                     T=C
+                 ]
+                 c:\boost\include\boost-1_57\boost\archive\detail\common_oarchive.hpp(69): см. ссылку на создание экземпляров функции шаблон при компиляции "void boost::archive::save<Archive,T>(Archive &,T &)"
+                 with
+                 [
+                     Archive=boost::archive::text_oarchive,
+                     T=C
+                 ]
+                 c:\boost\include\boost-1_57\boost\archive\basic_text_oarchive.hpp(86): см. ссылку на создание экземпляров функции шаблон при компиляции "void boost::archive::detail::common_oarchive<Archive>::save_override<T>(T &,int)"
+                 with
+                 [
+                     Archive=boost::archive::text_oarchive,
+                     T=C
+                 ]
+                 c:\boost\include\boost-1_57\boost\archive\detail\interface_oarchive.hpp(63): см. ссылку на создание экземпляров функции шаблон при компиляции "void boost::archive::basic_text_oarchive<Archive>::save_override<T>(T &,int)"
+                 with
+                 [
+                     Archive=boost::archive::text_oarchive,
+                     T=C
+                 ]
+                 c:\documents and settings\administrator\my documents\visual studio 2010\projects\boostser\boostser\source1.cpp(112): см. ссылку на создание экземпляров функции шаблон при компиляции "Archive &boost::archive::detail::interface_oarchive<Archive>::operator <<<C>(T &)"
+                 with
+                 [
+                     Archive=boost::archive::text_oarchive,
+                     T=C
+                 ]
+       ManifestResourceCompile:
+         c:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\BoostSer.exe.embed.manifest.res" Debug\BoostSer_manifest.rc 
+       Link:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Documents and Settings\Administrator\My Documents\Visual Studio 2010\Projects\BoostSer\Debug\BoostSer.exe" /INCREMENTAL /NOLOGO /LIBPATH:C:\boost\lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\BoostSer.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Documents and Settings\Administrator\My Documents\Visual Studio 2010\Projects\BoostSer\Debug\BoostSer.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Documents and Settings\Administrator\My Documents\Visual Studio 2010\Projects\BoostSer\Debug\BoostSer.lib" /MACHINE:X86 Debug\BoostSer.exe.embed.manifest.res
+         Debug\source1.obj
+            Создается библиотека C:\Documents and Settings\Administrator\My Documents\Visual Studio 2010\Projects\BoostSer\Debug\BoostSer.lib и объект C:\Documents and Settings\Administrator\My Documents\Visual Studio 2010\Projects\BoostSer\Debug\BoostSer.exp
+       Manifest:
+         Файл "Debug\BoostSer.exe.embed.manifest" удаляется.
+         c:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"Debug\BoostSer.exe.embed.manifest" /manifest Debug\BoostSer.exe.intermediate.manifest
+         c:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\BoostSer.exe.embed.manifest.res" Debug\BoostSer_manifest.rc 
+       LinkEmbedManifest:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Documents and Settings\Administrator\My Documents\Visual Studio 2010\Projects\BoostSer\Debug\BoostSer.exe" /INCREMENTAL /NOLOGO /LIBPATH:C:\boost\lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\BoostSer.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Documents and Settings\Administrator\My Documents\Visual Studio 2010\Projects\BoostSer\Debug\BoostSer.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Documents and Settings\Administrator\My Documents\Visual Studio 2010\Projects\BoostSer\Debug\BoostSer.lib" /MACHINE:X86 Debug\BoostSer.exe.embed.manifest.res
+         Debug\source1.obj
+            Создается библиотека C:\Documents and Settings\Administrator\My Documents\Visual Studio 2010\Projects\BoostSer\Debug\BoostSer.lib и объект C:\Documents and Settings\Administrator\My Documents\Visual Studio 2010\Projects\BoostSer\Debug\BoostSer.exp
+         BoostSer.vcxproj -> C:\Documents and Settings\Administrator\My Documents\Visual Studio 2010\Projects\BoostSer\Debug\BoostSer.exe
+       FinalizeBuildStatus:
+         Файл "Debug\BoostSer.unsuccessfulbuild" удаляется.
+         Обращение к "Debug\BoostSer.lastbuildstate".
+     1>Построение проекта "C:\Documents and Settings\Administrator\My Documents\Visual Studio 2010\Projects\BoostSer\BoostSer\BoostSer.vcxproj" завершено (целевые объекты rebuild).
+
+Построение успешно завершено.
+
+Затраченное время: 00:00:03.31
