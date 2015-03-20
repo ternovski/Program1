@@ -1,4 +1,3 @@
- //Changed from Danya Sinicin Added Recursive iterator in dir_runner
 #include <iostream>
 #include <string>
 #include <fstream>
@@ -7,8 +6,8 @@
 #include <boost/serialization/serialization.hpp>
 #include <boost/archive/text_oarchive.hpp>
 #include <boost/archive/text_iarchive.hpp>
-#include "sha256.h"
-//#include "md5.h"
+#include "sha224.h"
+
 
 using namespace std;
 
@@ -101,7 +100,7 @@ path main_path_get(){
 	}
 	return p;
 } 
-string sha256constructor(path p){
+string sha224constructor(path p){
 ifstream o;
 
 o.open(p.string(),ifstream::in);
@@ -109,7 +108,7 @@ o.open(p.string(),ifstream::in);
 				while(!o.eof()){
 				text+=o.get();
 				}
-string a=sha256(text);
+string a=sha224(text);
 o.close();
 return a;
 };
@@ -123,7 +122,7 @@ void dir_runner(path main_p){
 		if (is_regular_file(*dir_itr)){
 				path p = *dir_itr;
 				cout << "create a class:" << std::endl;
-                C c(p.filename().string(), file_size(p), p.string(),sha256constructor(p));
+                C c(p.filename().string(), file_size(p), p.string(),sha224constructor(p));
 				boost::archive::text_oarchive oa(o);
 				oa << c;
 				
